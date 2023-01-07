@@ -1,6 +1,6 @@
 ###### UBUNTU 22.04.1 LTS (WSL2)
 # **GIT NOTES**
-#### INSTALLING/UPDATING GIT
+### INSTALLING/UPDATING GIT
 
 Make sure your system is updated:
 `sudo apt update && sudo apt upgrade`
@@ -28,7 +28,7 @@ options = "metadata"
 
 Now, either restart your windows machine or close all WSL shells and run `wsl --shutdown`.
 
-#### SETTING UP A REMOTE REPO WITH SSH KEYS
+### SETTING UP A REMOTE REPO WITH SSH KEYS
 `ssh-keygen -o -t rsa -C "email@example.com"` # create a public/private rsa key pair with openssh format
 `cd ~/.ssh`	# where the public ssh key is
 `cat id_rsa.pub` # view the public key
@@ -41,7 +41,7 @@ git remote add origin git@github.com:user/repo.git
 git clone git@github.com:datowq/guides.git	
 ```
 
-#### USING GIT
+### USING GIT
 **Basic git workflow:**
 
 `git clone <a git repository>` # copy a repo that already exists
@@ -60,6 +60,7 @@ OR
 
 `git push` # push the committed changes to the desired branch/repo
 
+
 **For a workflow with a team:**
 
 `git pull <--rebase>` # fetch a remote repo and use rebase or merge to handle merge conflicts
@@ -74,6 +75,7 @@ OR
 
 `git push` # push the committed resolved conflicts to the desired branch/repo
 
+
 **Branching:**
 
 `git branch <name>`	# create a new branch
@@ -85,6 +87,7 @@ OR
 `git branch -d <branch name>` # delete a branch
 
 `git merge <branch name>` # merge the branch with the branch you are currently checked-out to
+
 
 **Helpful git tools:**
 
