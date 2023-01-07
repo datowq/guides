@@ -1,23 +1,28 @@
 ###### UBUNTU 22.04.1 LTS (WSL2)
-# **GIT NOTES**
+# **GIT**
 ### INSTALLING/UPDATING GIT
 
 Make sure your system is updated:
+
 `sudo apt update && sudo apt upgrade`
 
 Add git's repository:
+
 `sudo add-apt-repository ppa:git-core/ppa && sudo apt update`
 
 Install git:
+
 `sudo apt install git`
 
 Make sure git is installed:
+
 `git --version`
 
 In order to use git without sudo and bad perm management we will mount our Windows drives
 under WSL.
 
 Edit/create the file:
+
 `sudo vim /etc/wsl.conf`
 
 Add:
@@ -30,7 +35,9 @@ Now, either restart your windows machine or close all WSL shells and run `wsl --
 
 ### SETTING UP A REMOTE REPO WITH SSH KEYS
 `ssh-keygen -o -t rsa -C "email@example.com"` # create a public/private rsa key pair with openssh format
+
 `cd ~/.ssh`	# where the public ssh key is
+
 `cat id_rsa.pub` # view the public key
 
 Now, copy the public key.
