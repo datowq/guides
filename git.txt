@@ -1,0 +1,55 @@
+UBUNTU 22.04.1 LTS (WSL2)
+
+INSTALLING/UPDATING GIT
+
+Make sure system is updated:
+sudo apt update && sudo apt upgrade
+
+Add git repository:
+sudo add-apt-repository ppa:git-core/ppa && sudo apt update
+
+Install git:
+sudo apt install git
+
+Make sure git is installed:
+git --version
+
+
+USING GIT:
+
+Basic git workflow:
+git clone <a git repository>	# this is for getting a repository created already
+OR
+git init 			# this is for a local repository to be created
+git status			# View the state of a repo
+git add <some-file/folder>	# Stage a file/folder (use -A for everything)
+git commit -m <message>		# Commit whatever is staged
+git push			# Push the committed changes to the desired branch/repo
+git pull --rebase		# If a push conflict occurs, pull is used to handle merge conflicts
+				# --rebase is just good practice for a centralized workflow (which is what this
+				# guide is based on)
+git status			# this will show where a merge conflict is
+(Now handle the merge conflict locally)
+git add <file/folder>		# Stages the merge conflict
+git rebase --continue		# This will commit each resolved merge conflict as they are rebased
+git rebase --abort		# Resets to right before the initial pull
+git push			# Push the committed changes/merge conflicts to the desired branch/repo
+
+
+Branching:
+git branch <name>		# Creates a new branch
+git checkout <branch name>	# Switches to a branch
+git checkout -b <name>		# Switches to and creates a new branch
+git branch -d <branch name>	# Deletes a branch
+git merge <branch name>		# Merges the branch with the branch you are currently checked-out to
+
+
+Helpful git tools:
+git reset --soft HEAD~1		# Undoes the last commit; --soft preserves file changes; HEAD~1 is 1 commit back
+				# --hard and --mixed are also options
+git revert HEAD			# Reverts the last commit and adds a new commit to undo the last commit
+git log
+git reset			# Unstages all files
+git reset -- <file>		# Unstages a specific file
+git remote add origin youruser@yourserver.com:/path/to/my_project.git	# connects a locally initialized git
+									# repo to a remote one i.e. github
