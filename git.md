@@ -1,6 +1,6 @@
 ###### UBUNTU 22.04.1 LTS (WSL2)
 # **GIT**
-### INSTALLING/UPDATING GIT
+## INSTALLING/UPDATING GIT
 
 Make sure your system is updated:
 
@@ -33,7 +33,7 @@ options = "metadata"
 
 Now, either restart your windows machine or close all WSL shells and run `wsl --shutdown`.
 
-### SETTING UP A REMOTE REPO WITH SSH KEYS
+## SETTING UP A REMOTE REPO WITH SSH KEYS
 `ssh-keygen -o -t rsa -C "email@example.com"` # create a public/private rsa key pair with openssh format
 
 `cd ~/.ssh`	# where the public ssh key is
@@ -48,7 +48,7 @@ git remote add origin git@github.com:user/repo.git
 git clone git@github.com:datowq/guides.git	
 ```
 
-### USING GIT
+## USING GIT
 **Basic git workflow:**
 
 `git clone <a git repository>` # copy a repo that already exists

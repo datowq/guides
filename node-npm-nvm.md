@@ -7,7 +7,7 @@ Make a symbolic link to Windows desktop with:
 `ln -s /mnt/c/Users/<User>/Desktop/ Desktop`
 Note: this isn't required but symbolic links save a lot of time for projects when using wsl
 
-### INSTALLING NVM
+## INSTALLING NVM
 Update the system:
 
 `sudo apt update && sudo apt upgrade`
@@ -32,7 +32,7 @@ This should output:
 
 `nvm`
 
-### INSTALLING/USING NODE/NPM
+## INSTALLING/USING NODE/NPM
 
 Now install the version of node that you want:
 
@@ -54,7 +54,7 @@ You can switch node/npm versions with:
 
 `nvm use v16` (again, whatever version you want)
 
-### UNINSTALL
+## UNINSTALL
 You can uninstall node versions with:
 
 `nvm uninstall <version>`
