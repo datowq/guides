@@ -44,5 +44,6 @@ nvm uninstall <version>
 Uninstall npm with:
 sudo npm uninstall npm -g
 
-Note: npm versions are shipped with certain node versions when using nvm, using --lts is recommended or whateverversion that the project requires
+Note: npm versions are shipped with certain node versions when using nvm, using --lts is recommended or 
+whatever version that the project requires
 
