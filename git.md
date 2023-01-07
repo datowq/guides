@@ -44,8 +44,8 @@ Now, copy the public key.
 Browse to account settings > SSH AND GPG keys > New SSH key and paste the key in.
 After adding, use either of the following to create/clone the remote repo:
 ```cmd
-git remote add origin git@github.com:user/repo.git
-git clone git@github.com:datowq/guides.git	
+git remote add origin git@github.com:<user>/<repo>.git
+git clone git@github.com:<user>/<repo>.git	
 ```
 
 ## USING GIT
