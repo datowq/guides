@@ -39,7 +39,7 @@ First, create a public/private repo at https://github.com/
 
 Run `git init` in the `vite-project` folder.
 
-Create an initial commit with `git add` and `git commit -m "initial commit"` 
+Create an initial commit with `git add .` and `git commit -m "initial commit"` 
 
 Rename the branch to **main** with `git branch -M main`.
 
